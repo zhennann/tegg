@@ -1,19 +1,21 @@
 {
-  "name": "@eggjs/tegg-controller-plugin",
+  "name": "@eggjs/tegg-orm-plugin",
   "eggPlugin": {
-    "name": "teggController",
+    "name": "teggOrm",
     "dependencies": [
       "tegg"
     ]
   },
   "version": "0.0.1",
-  "description": "controller decorator for egg",
+  "description": "orm decorator for egg",
   "keywords": [
     "egg",
     "plugin",
     "typescript",
     "module",
-    "tegg"
+    "tegg",
+    "orm",
+    "leoric"
   ],
   "files": [
     "app.js",
@@ -39,20 +41,21 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:eggjs/tegg.git",
-    "directory": "plugin/controller"
+    "directory": "plugin/orm"
   },
   "engines": {
     "node": ">=14.0.0"
   },
   "dependencies": {
     "@eggjs/egg-module-common": "^0.0.1",
-    "@eggjs/tegg-common-util": "^0.0.1",
     "@eggjs/tegg": "^0.0.1",
+    "@eggjs/tegg-common-util": "^0.0.1",
     "@eggjs/tegg-loader": "^0.0.1",
     "@eggjs/tegg-metadata": "^0.0.1",
     "@eggjs/tegg-runtime": "^0.0.1",
     "@types/koa-router": "^7.0.40",
-    "koa-compose": "^3.2.1"
+    "koa-compose": "^3.2.1",
+    "leoric": "^1.6.7"
   },
   "devDependencies": {
     "@eggjs/module-test-util": "^0.0.1",
